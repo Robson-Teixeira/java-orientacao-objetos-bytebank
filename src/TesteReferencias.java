@@ -2,16 +2,16 @@
 public class TesteReferencias {
 	public static void main(String[] args) {
 		Conta primeiraConta = new Conta();
-		primeiraConta.saldo = 300;
-		System.out.println("Primeira conta - Saldo: " + primeiraConta.saldo);
+		primeiraConta.deposita(300);
+		System.out.println("Primeira conta - Saldo: " + primeiraConta.pegaSaldo());
 
 		Conta segundaConta = primeiraConta;
-		System.out.println("Segunda conta - Saldo: " + segundaConta.saldo);
+		System.out.println("Segunda conta - Saldo: " + segundaConta.pegaSaldo());
 
-		segundaConta.saldo += 100;
-		System.out.println("Segunda conta - Saldo: " + segundaConta.saldo);
+		segundaConta.deposita(100);
+		System.out.println("Segunda conta - Saldo: " + segundaConta.pegaSaldo());
 
-		System.out.println("Primeira conta - Saldo: " + primeiraConta.saldo);
+		System.out.println("Primeira conta - Saldo: " + primeiraConta.pegaSaldo());
 
 		if (primeiraConta == segundaConta)
 			System.out.println("São a mesma conta!");
