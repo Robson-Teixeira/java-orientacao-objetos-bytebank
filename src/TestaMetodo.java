@@ -5,10 +5,10 @@ public class TestaMetodo {
 		conta.deposita(100);
 		conta.deposita(50);
 
-		System.out.println("Saldo: " + conta.pegaSaldo());
+		System.out.println("Saldo: " + conta.getSaldo());
 
 		boolean conseguiuRetirar = conta.saca(20);
-		System.out.println("Saldo: " + conta.pegaSaldo());
+		System.out.println("Saldo: " + conta.getSaldo());
 		System.out.println(conseguiuRetirar);
 
 		Conta conta2 = new Conta();
@@ -21,8 +21,8 @@ public class TestaMetodo {
 		else
 			System.out.println("Faltou dinheiro");
 
-		System.out.println("Conta 1 - Saldo: " + conta.pegaSaldo());
-		System.out.println("Conta 2 - Saldo: " + conta2.pegaSaldo());
+		System.out.println("Conta 1 - Saldo: " + conta.getSaldo());
+		System.out.println("Conta 2 - Saldo: " + conta2.getSaldo());
 
 		// conta.cliente = "Robson Teixeira";
 		// System.out.println("Titular: " + conta.cliente);

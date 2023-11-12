@@ -5,24 +5,24 @@ public class CriaConta {
 
 		Conta primeiraConta = new Conta();
 		primeiraConta.deposita(200);
-		System.out.println("Primeira conta - Saldo: " + primeiraConta.pegaSaldo());
+		System.out.println("Primeira conta - Saldo: " + primeiraConta.getSaldo());
 
 		primeiraConta.deposita(100);
-		primeiraConta.agencia = 146;
+		primeiraConta.setAgencia(146);
 		System.out.println("Primeira conta - Valor recebido: " + 100d);
-		System.out.println("Primeira conta - Saldo: " + primeiraConta.pegaSaldo());
-		System.out.println("Primeira conta - Agência: " + primeiraConta.agencia);
-		System.out.println("Primeira conta - Número: " + primeiraConta.numero);
+		System.out.println("Primeira conta - Saldo: " + primeiraConta.getSaldo());
+		System.out.println("Primeira conta - Agência: " + primeiraConta.getAgencia());
+		System.out.println("Primeira conta - Número: " + primeiraConta.getNumero());
 
 		Conta segundaConta = new Conta();
 		segundaConta.deposita(300);
-		System.out.println("Segunda conta - Saldo: " + segundaConta.pegaSaldo());
-		System.out.println("Segunda conta - Agência: " + segundaConta.agencia);
-		System.out.println("Segunda conta - Número: " + segundaConta.numero);
+		System.out.println("Segunda conta - Saldo: " + segundaConta.getSaldo());
+		System.out.println("Segunda conta - Agência: " + segundaConta.getAgencia());
+		System.out.println("Segunda conta - Número: " + segundaConta.getNumero());
 
-		segundaConta.agencia = 146;
+		segundaConta.setAgencia(146);
 		System.out.println("Segunda conta - Agência alterada para: " + 146);
-		System.out.println("Segunda conta - Agência: " + segundaConta.agencia);
+		System.out.println("Segunda conta - Agência: " + segundaConta.getAgencia());
 
 		if (primeiraConta == segundaConta)
 			System.out.println("São a mesma conta!");

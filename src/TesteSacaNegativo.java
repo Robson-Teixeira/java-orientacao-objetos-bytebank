@@ -4,6 +4,6 @@ public class TesteSacaNegativo {
 		Conta conta = new Conta();
 		conta.deposita(100);
 		System.out.println("Saque realizado: " + conta.saca(101));
-		System.out.println("Conta - Saldo: " + conta.pegaSaldo());
+		System.out.println("Conta - Saldo: " + conta.getSaldo());
 	}
 }
