@@ -1,7 +1,7 @@
 
 public class TestaContaSemCliente {
 	public static void main(String[] args) {
-		Conta conta = new Conta();
+		Conta conta = new Conta(1123, 1337);
 		System.out.println("Conta - Saldo: " + conta.getSaldo());
 
 		System.out.println("Conta - Cliente: " + conta.getCliente());

@@ -8,7 +8,7 @@ public class TestaBanco {
 		cliente.setCpf("079.371.220-30");
 		cliente.setProfissao("Programador");
 
-		Conta conta = new Conta();
+		Conta conta = new Conta(1123, 1337);
 		conta.deposita(100);
 
 		conta.setCliente(cliente);
