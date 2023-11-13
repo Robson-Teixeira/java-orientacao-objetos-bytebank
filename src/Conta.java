@@ -14,6 +14,10 @@ public class Conta {
 		System.out.println("Conta criada: " + this.numero);
 		System.out.println("O total de contas é: " + Conta.total);
 	}
+	
+	public Conta(int numero) {
+		this(1123, numero); // Invoca o construtor que recebe int e int
+	}
 
 	public void deposita(double valor) {
 		this.saldo += valor;
